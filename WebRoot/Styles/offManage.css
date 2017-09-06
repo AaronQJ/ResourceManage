@@ -1,0 +1,97 @@
+/*Ϊ�˽���칫�ʲ��ѯ�ֶν϶������*/
+@media only screen and (max-width:1024px){
+	.searchRules{ height:22px; line-height:22px; border:1px solid #C2D1E4; width:84px !important; margin-right:8px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+    #searchButton{ width:60px; height:25px; -moz-border-radius:3px; -webkit-border-radius:3px;
+       border-radius:3px; border:1px solid #B8C3D7; color:#264061; background-color:#D1E0EF; cursor:pointer;}
+    .searchRulesBox{  height:40px; width:auto; margin-left:18px; margin-right:18px; border-bottom:1px dotted #FFF;text-align: left; color:#264061; line-height:40px; }
+    .first{margin-left:18px;}
+}
+
+.massageBox{ padding-bottom:46px;  } 
+.massageBox input{  width:172px;}
+#offState{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:206px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px; }
+#offDevVersion, #offState, #offUser, #offRemark{ margin-right:0px; }
+#offRemark{ width:202px;}
+#offUseDepart{ width:104px; }
+#offManager{ width:156px; }
+#offUser{ width:172x; }//存放地点
+#offSeqNum{ width:156px; }
+#offLifeTime{ width:175px; margin-right:0; }
+.siveBoxAdd{ left:320px; }
+@media only screen and (max-width:1024px){
+	.massageBox input{  width:142px;}
+	#offState{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:176px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 20px 10px 5px; }
+	
+	#offRemark{ width:172px;}
+	#offUseDepart{ width:74px; }
+	
+	#offManager,#offSeqNum{ width:126px !important; }
+	#offUser{ width:148px; }/*存放地点*/
+	
+	#offLifeTime{ width:148px; margin-right:0; }
+	#withBeizhu{ margin-left:40px !important; }
+	#withTijiao{ left:310px !important; }
+}
+
+/*��ҳ����ת��ť��ʽ�����ҵȣ�*/
+.leadPage a img{ width:10px; height:10px }
+.leadPage input{ width:30px; height:15px; border:1px solid #B1CEEC; text-align:center }
+
+/*changeOne*/
+#offState2{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:206px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px; }*/
+#offDevVersion2, #offState2, #offUser2, #offRemark2{ margin-right:0px; }
+
+#offRemark2{ width:202px;}
+#offUseDepart2{ width:104px; }
+#offManager2{ width:156px; }
+#offUser2{ width:172px; }
+#offSeqNum2{ width:156px; }
+.buttonCon span{margin-left:30px;}
+
+@media only screen and (max-width:1024px){
+	#offState2{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:176px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 20px 10px 5px; }
+	#offRemark2{ width:172px;}
+	#offUseDepart2{ width:74px; }
+	#offManager2,#offSeqNum2{ width:126px !important; }
+	#offUser2{ width:148px; }/*存放地点*/
+	
+	#offLifeTime2{ width:148px; margin-right:0; }
+	#withBeizhu2{ margin-left:40px !important; }
+	#withXiugai2{ margin-left:10px !important; }
+}
+
+
+/*detail*/
+#showDetail{ height:auto; width:auto !important; text-align:left;display:none;}
+#showDetail p{ text-align:center; font-size:16px !important; font-weight:bold; 
+         height:40px; line-height:40px; letter-spacing:2px; }
+.detailCon{ margin-left:20px; margin-right:20px; margin-top:10px; margin-bottom:40px;  line-height:35px;}
+.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:182px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px;}   
+#detailoffState{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:206px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px; }
+ #offState, #offUser, #offRemark,#detailoffLifeTime{ margin-right:0px; }
+ #detailoffDevVersion{ width:174px; }
+#detailoffRemark{ width:208px;}
+#detailoffUseDepart{ width:114px; }
+#detailoffManager{ width:168px; }
+#detailoffUser,#detailoffLifeTime{ width:176px; }
+#detailoffSeqNum{ width:166px; }
+
+#detailoffDevVersion,#detailoffState,#detailoffUser,#detailoffRemark{ margin-right:0px; }
+@media only screen and (max-width:1024px){
+  #showDetail{width:800px;}
+  .detailCon{width:760px;}
+  .detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:152px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 30px 10px 5px;}   
+	#detailoffState{width:172px;}
+	#offState, #offUser, #offRemark{ margin-right:0px; }
+	 #detailoffDevVersion{ width:144px;}
+	#detailoffRemark{ width:172px;}
+	#detailoffUseDepart{ width:84px; }
+	#detailoffManager{ width:126px; }
+	#detailoffSeqNum{ width:130px; }
+	#detailoffUser{ width:146px; }/*存放地点*/
+	#withBeizhuOff{ margin-left:18px; } 
+	
+	#detailoffLifeTime{ width:148px; margin-right:0; }
+	#detailwithBeizhu{ margin-left:20px !important; }
+	
+}

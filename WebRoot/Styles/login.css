@@ -1,0 +1,34 @@
+*{  padding:0px;  margin:0px;  font-size:14px; font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu; }
+html,body{  width:100%; height:100%; }
+body{ min-width:1000px; overflow-x:hidden;  overflow-y:hidden;  }
+
+.header{ width:1000px; height:52px; margin:auto auto; margin-top:40px;}
+.header img{  display:inline-block; float:left;}
+.header span{  display:inline-block; height:30px; margin-top:20px; float:right; font-size:20px; font-weight:bold; color:#003C83; letter-spacing:2px;}
+.con{ width:1000px; height:432px; margin:auto auto; margin-top:10px; position:relative; background:url("../images/BG_01.png") no-repeat; background-size:100% 100%;}
+.login{ width:360px;  height:300px;  position:absolute; right:40px; top:60px; border:1px solid #8e8e8e; background-color:#FFFFFF;  }
+.loginTop{ width:100%;height:50px; border-bottom:1px solid #8AACD2;}
+.loginTop h3{ height:50px; line-height:50px; margin-left:30px; font-size:24px; font-weight:bold; color:#366FBC; letter-spacing:2px;}
+#form-logID{  margin-top:20px; width:320px; height:240px; margin-left:30px; }
+.text-in{width:140px; height:22px; line-height:22px; text-index:2px; margin-top:14px;}
+#form-logID label{ width:86px; height:22px; display:inline-block; font-size:16px; line-height:22px; margin-top:14px; }
+#userName1{ display:inline-table; vartical-align:middle; height:22px;line-height:22px;
+             background:url("../images/login.gif") no-repeat; background-position:0px 0px; width:22px; height:17px;}
+#pwd1{ display:inline-table; vartical-align:middle; height:22px;line-height:22px;
+    background:url("../images/login.gif") no-repeat; background-position:0px -28px; width:22px; height:17px; }
+#checkNumber1{ display:inline-table; vartical-align:middle; height:22px;line-height:22px;
+    background:url("../images/login.gif") no-repeat; background-position:0px -86px; width:22px; height:17px; }
+
+#button1{  width:100px;  height:24px;  line-height:24px !important;  display:inline-block;  border:1px solid #80A5D5;
+            border-radius:2px;  cursor:pointer;   letter-spacing:2px;  }
+.forgetPwd{ display:inline-block; height:24px;line-height:24px; width:auto; margin-left:72px; text-decoration: none;}
+.forgetPwd:hover{ color:red;}
+
+.footer{ color:#8e8e8e; text-align:center; margin-top:30px;}
+.tips{  height:26px;line-height:26px; color:red; }
+
+/*ÆÁÄ»¿í¶ÈÐ¡ÓÚ1024px*/
+@media only screen and (max-width:1024px){
+	.header{width:800px;}
+	.con{ width:800px;}
+}

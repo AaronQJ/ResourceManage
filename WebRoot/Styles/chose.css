@@ -1,0 +1,8 @@
+
+.choseDiv{ height:auto; max-width:250px; display:none;  background-color:#F4F4F4; line-height:22px; color:black;
+    font-size:14px;  position:absolute; top:100px; left:100px;z-index:100;
+   border-top:1px solid #FFF; }
+.choseDiv ul{ max-height:200px; overflow-y:auto; }
+.choseDiv ul li{ width:100%; border-bottom:1px solid white; list-style-type:none }
+.choseDiv ul li:hover{cursor:pointer;}
+

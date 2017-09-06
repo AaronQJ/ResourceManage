@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+    <hibernate-mapping>
+    	<class name="com.bussniess.domain.ProBak" table="pro_bak">
+    		<id name="bakId" column="bakId">
+    			<generator class="uuid"></generator>
+    		</id>
+    	
+    	<property name="bakSeqNum"		 column="bakSeqNum"></property>
+    	<property name="bakVersion" 	 column="bakVersion"></property>
+    	<property name="bakFactory" 	 column="bakFactory"></property>
+    	<property name="bakDevType" 	 column="bakDevType"></property>
+    	<property name="bakForm" 	 	 column="bakForm"></property>
+    	<property name="bakState"		 column="bakState"></property>
+    	<property name="bakManaDepart"   column="bakManaDepart"></property>
+    	<property name="bakUseDepart"    column="bakUseDepart"></property>
+    	<property name="bakUser" 		 column="bakUser"></property>
+    	<property name="bakDevRoom"		 column="bakDevRoom"></property>
+    	<property name="bakDevFrame" 	 column="bakDevFrame"></property>
+    	<property name="bakBuyCont" 	 column="bakBuyCont"></property>
+    	<property name="bakArrAcceptTime" column="bakArrAcceptTime"></property>
+    	<property name="bakMaintainCont" column="bakMaintainCont"></property>
+    	<property name="bakMaintainFactor" column="bakMaintainFactor"></property>
+    	<property name="bakMaintainDeadLine" column="bakMaintainDeadLine"></property>
+    	<property name="bakRecorder" column="bakRecorder"></property>
+    	<property name="bakRemark" column="bakRemark"></property>
+    	<property name="loginUserName" column="loginUserName"></property>
+    	<property name="bakUpdTime" column="bakUpdTime"></property>
+    
+    	</class>  
+    </hibernate-mapping>

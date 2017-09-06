@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+		 
+	<package name="userAction" extends="struts-default,json-default,new-structs-default">
+	
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        <action name="usersAction_login_checkCode" class="com.bussniess.web.action.UsersAction" method="usersAction_login_checkCode">
+       		<result type="json"><param name="root">result</param>
+     		</result>
+     		<interceptor-ref name="defaultStack"></interceptor-ref>   
+        </action>
+        <action name="usersAction_userNameCheck" class="com.bussniess.web.action.UsersAction" method="usersAction_userNameCheck">
+       		<result type="json"><param name="root">result</param>
+     		</result>
+     		<interceptor-ref name="defaultStack"></interceptor-ref>   
+        </action>
+        
+        
+        
+        <!-- 各个功能权限检查 -->
+        
+        <action name="usersAction_check_dataManage_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_dataManage_power">
+            <result>/dataManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_ProAdd_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_ProAdd_power">
+            <result>/speManage.jsp</result>
+        </action>
+        <action name="usersAction_check_ProDel_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_ProDel_power">
+            <result>/speManage.jsp</result>
+        </action>
+        <action name="usersAction_check_ProUpd_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_ProUpd_power">
+            <result>/speManage.jsp</result>
+        </action>
+        <action name="usersAction_check_ProImport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_ProImport_power">
+            <result>/speManage.jsp</result>
+        </action>
+        <action name="usersAction_check_ProExport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_ProExport_power">
+            <result>/speManage.jsp</result>
+        </action>
+        
+         <action name="usersAction_check_BarCode_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_BarCode_power">
+            <result>/speManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_speExport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_speExport_power">
+            <result>/speManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_speImport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_speImport_power">
+            <result>/speManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_bakExport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_bakExport_power">
+            <result>/bakManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_bakImport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_bakImport_power">
+            <result>/bakManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_offExport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_offExport_power">
+            <result>/OffManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_offImport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_offImport_power">
+            <result>/OffManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_lineExport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_lineExport_power">
+            <result>/lineManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_lineImport_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_lineImport_power">
+            <result>/lineManage.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="usersAction_check_Log_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_Log_power">
+            <result>/logManage.jsp</result>
+        </action>
+        
+        <action name="usersAction_check_Tablebak_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_TableBak_power">
+            <result>/tableBak.jsp</result>
+        </action>
+        <action name="usersAction_check_TableOff_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_TableOff_power">
+            <result>/tableOff.jsp</result>
+        </action>
+        <action name="usersAction_check_TableSpe_power" class="com.bussniess.web.action.UsersAction" method="usersAction_check_TableSpe_power">
+            <result>/tableSpe.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="usersAction_login" class="com.bussniess.web.action.UsersAction" method="usersAction_login">
+            <result name="Login_Success">/local.jsp</result>
+            <result name="Login_Failed">/index.jsp</result>
+       		<interceptor-ref name="defaultStack"></interceptor-ref>   
+        </action>
+        
+        <action name="usersAction_logout" class="com.bussniess.web.action.UsersAction" method="usersAction_logout">
+        	<result name="Logout">/index.jsp</result>
+        	<interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action name="usersAction_userNameExistCheck" class="com.bussniess.web.action.UsersAction" method="usersAction_userNameExistCheck">
+       		<result type="json"><param name="root">result</param></result>
+        </action>
+        
+        
+        <action name="usersAction_add" class="com.bussniess.web.action.UsersAction" method="usersAction_add">
+        	<result name="Add_Success" type="redirectAction">usersAction_showSelect</result>
+        	<result name="Add_FailedPwd">/pwdFailed.jsp</result>   	
+        	<result name="Add_FailedUserName">/nameFailed.jsp</result>
+        </action>  
+        
+              
+        <action name="usersAction_del" class="com.bussniess.web.action.UsersAction" method="usersAction_del">
+        	<result name="Delete_Success" type="redirectAction">usersAction_showSelect</result>
+        </action>        
+        <action name="usersAction_del_check" class="com.bussniess.web.action.UsersAction" method="usersAction_del_check">
+       		<result type="json"><param name="root">result</param>
+     		</result>
+        </action>
+        
+       <!-- <action name="usersAction_showDetail" class="com.bussniess.web.action.UsersAction" method="usersAction_showDetail">
+        	<result name="Show_Success">/peopleManage.jsp</result>
+        </action>  -->
+        
+         <action name="usersAction_showSelect" class="com.bussniess.web.action.UsersAction" method="usersAction_showSelect">
+        	<result name="Show_Success">/peopleManage.jsp</result>
+         </action>
+        
+        <action name="usersAction_updatePwd" class="com.bussniess.web.action.UsersAction" method="usersAction_updatePwd">
+        	<result name="Update_Success">/local.jsp</result>
+        	<result name="Update_PwdCheckFailed">/pwdFailed.jsp</result>
+        	<result name="Update_OldFailed">/oldPwdFailed.jsp</result>
+        	<result name="Empty">/changePwd.jsp</result>
+        </action>
+        
+         <action name="usersAction_updatePwdOldCheck" class="com.bussniess.web.action.UsersAction" method="usersAction_updatePwdOldCheck">
+       		<result type="json"><param name="root">result</param>
+     		</result>
+        </action>
+        
+        <action name="usersAction_update" class="com.bussniess.web.action.UsersAction" method="usersAction_update">
+        	<result name="Update_Success"  type="redirectAction">usersAction_showSelect</result>
+        	<result name="Update_Failed">/pwdFailed.jsp</result>
+        </action>
+
+	</package>
+</struts>	

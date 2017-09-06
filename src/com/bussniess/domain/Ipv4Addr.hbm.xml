@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Ipv4Addr" table="IPV4ADDR">
+        <id name="ipAddrId" type="java.lang.Integer">
+            <column name="IPADDRID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="port" class="com.bussniess.domain.Port" fetch="join">
+            <column name="PORT" />
+        </many-to-one>
+        <property name="ipv4Addr" type="java.lang.String">
+            <column name="IPV4ADDR" />
+        </property>
+        <property name="ipv4Mask" type="java.lang.String">
+            <column name="IPV4MASK" />
+        </property>
+    </class>
+</hibernate-mapping>

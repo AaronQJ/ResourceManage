@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Dangerous" table="DANGEROUS">
+        <id name="dangerId" type="java.lang.Integer">
+            <column name="DANGERID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="device" class="com.bussniess.domain.Device" fetch="join">
+            <column name="DEVICE" />
+        </many-to-one>
+        <property name="idsAlertNum" type="java.lang.Integer">
+            <column name="IDSALERTNUM" />
+        </property>
+        <property name="ifOutErrorRate" type="java.lang.String">
+            <column name="IFOUTERRORRATE" />
+        </property>
+        <property name="ifInErrorRate" type="java.lang.String">
+            <column name="IFINERRORRATE" />
+        </property>
+        <property name="ifOutPackageLoss" type="java.lang.String">
+            <column name="IFOUTPACKAGELOSS" />
+        </property>
+        <property name="ifInPackageLoss" type="java.lang.String">
+            <column name="IFINPACKAGELOSS" />
+        </property>
+        <property name="ipInErrorRate" type="java.lang.String">
+            <column name="IPINERRORRATE" />
+        </property>
+        <property name="ipOutErrorRate" type="java.lang.String">
+            <column name="IPOUTERRORRATE" />
+        </property>
+        <property name="ifInFlowGrowthRate" type="java.lang.String">
+            <column name="IFINFLOWGROWTHRATE" />
+        </property>
+        <property name="ifInFlowNum" type="java.lang.String">
+            <column name="IFINFLOWNUM" />
+        </property>
+        <property name="ifOutFlowNum" type="java.lang.String">
+            <column name="IFOUTFLOWNUM" />
+        </property>
+        <property name="concentration" type="float">
+            <column name="CONCENTRATION" />
+        </property>
+    </class>
+</hibernate-mapping>

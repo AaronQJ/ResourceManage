@@ -1,0 +1,26 @@
+.changeBox, .importBox{ display:none; position:absolute;  width:420px; min-height:200px;
+ height:auto; border:3px solid #A5CFE7; background-color:#fff; opacity:1; 
+ position:absolute; top:100px; left:150px; -moz-border-radius:5px; 
+ -webkit-border-radius:5px; border-radius:5px; padding-top:5px; font-size:15px; z-index:3;}
+.changeBox label{display:inline-block;height:24px; line-height:24px; width:80px; float:left; margin-left:100px; text-align:justify; text-justify:inter-ideograph; }
+.changeBox label>span{display: inline-block; padding-left: 100%; } 
+.colon{ height:24px; line-height:24px; width:8px; display:inline-block; float:left;}
+.changeBox input, #changeSpeState, #changeBakState, #changeOffState{display:inline-block; height:22px; border:1px solid #C2D1E4; min-width:50px; width:140px; float:left;/*margin-right:10px;*/ -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; /*margin:0px 5px 10px 5px;*/}
+.changeBox p{ font-size:16px; text-align:center;}
+.changeBox p a { float:right; }
+.changeCloseBox, .importCloseBox{ position:absolute; right:0; top:0; }
+.changeCloseBox img, .importCloseBox img{ width:20px; height:20px;  }
+.changeCloseBox img:hover{ opacity:0.8; }
+.changeMessageBox{  width:96%;  height:auto;  text-align:left; margin:0 auto; margin-top:20px; margin-bottom:40px; position:relative; text-align:center;  }
+#useManaDepBox{ margin-right:33px; }
+#sureToChange{ height:25px; width:130px; margin-left:136px; font-size:15px; color:#444; background-color:#CFDDEE; }
+
+
+/*µº»Î*/
+
+ 
+ .importBox .importForm{ border:1px solid #D0E6F4; text-align:left; overflow:hidden; width:80%; padding:5px; margin:15px auto; }
+ .importBox .fileAddress{ border:1px solid #E1E1E1; margin:10px 0 10px 0; width:99%; }
+ .importBox .importForm p{ width:100%; text-align:right; }
+ .isDownload{ width:95%; text-align:right; margin:5px 0 5px 0; }
+ .isDownload a{ text-decoration:underline; color:#f00; }

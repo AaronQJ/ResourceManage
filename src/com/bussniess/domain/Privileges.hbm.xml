@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bussniess.domain.Privileges" table="privilege">
+		<id name="privilegeId" column="privilegeId">
+			<generator class="uuid"></generator>		
+		</id>
+		<property name="path" column="path" ></property>
+		<property name="privilegeName" column="privilegeName" ></property>
+	
+	
+		<set name="roles"  table="role_privilege" lazy="false">
+    		<key column="privilegeId"></key>
+    		<many-to-many class="com.bussniess.domain.Roles" column="roleId"></many-to-many>
+    	</set>
+    </class>
+</hibernate-mapping>    

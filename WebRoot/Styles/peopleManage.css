@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.tableContent{ height:500px; width:100%; overflow:auto;}
+.searchBox{ width:99.5%; margin:0 auto; height:45px; background-color:#D0E6F4; border:1px solid #8CA4C3; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;  }
+.searchRulesBox{ margin-left:100px;}
+.searchRulesBox input{ text-indent:2px;}
+#addUser{  font-size:14px;  margin-left:50px}
+#addUser img{ width:20px; height:20px; vertical-align: middle;}
+.userTableBox { width:100%; position:absolute; bottom:20px; top:80px; overflow:auto;  }
+.userTableBox p{ height:20px; background-color:#EFF4FA; margin:10px 2px; text-align:left; font-size:14px; padding-left:5px;  -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+#normal{ margin-top:0;}
+table{ font-size:14px; width:100%; height:auto;  border:1px solid #C4D9F6; border-bottom:none; 
+      table-layout:fixed;}
+tr,th,td{ height:23px; line-height:23px;  border-right:1px solid #C4D9F6; 
+       border-bottom:1px solid #C4D9F6;}
+th{  background-color:#F4F4F4; }
+
+td{ white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
+.tableFooter{ position:absolute; bottom:0px;  width:100%; height:20px;  text-align:left; 
+padding-left:80%; font-size:14px; padding-right:20px;}
+
+/*用户*/
+#addUser1,#changeInfo{ position:absolute;left:0;top:0; width:420px; height:auto;  background-color:white; 
+          border:3px solid #A5CFE7;  -moz-border-radius:5px; -webkit-border-radius:5px; 
+          border-radius:5px; display:none; z-index:2;}
+#addUser1 p,#changeInfo p{ font-size:16px; font-weight:bold; line-height:40px; height:40px;}
+#addUser1 p a,#changeInfo p a{ float:right; }
+.closeBox img{ width:25px; height:25px; }
+.closeBox img:hover{ opacity:0.8; }
+.people{ width:380px; height:auto; margin:10px auto;   text-align:left; font-size:15px; line-height: 35px; position:relative;}
+.people div{ width:240px; margin:0 auto; }
+
+.people input{display:inline-block;text-indent:2px; float:left; }
+.people label{ display:inline-block; height:22px; line-height:22px; width:82px; margin-top:10px; float:left; margin-left:70px; text-align:justify; text-justify:inter-ideograph; }
+.people label>span{display: inline-block; padding-left: 100%; } 
+.colon{ height:22px; line-height:22px; width:8px; display:inline-block; margin-top:10px; text-align:center; float:left;}
+#checkUserNameAlert{display:inline-block; width:70px; height:22px; line-height:22px; color: red; display: none; margin-top:10px;float:left;}
+.userInfo{ width:140px; height:22px;margin-top:10px; line-height:22px; border:1px solid #C2D1E4; margin-left:5px; 
+           border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+.btnOk{ height:30px; width:80px; margin-top:20px; margin-bottom:20px;  margin-left:150px; font-size:14px; color:#444; 
+     background-color:#CFDDEE; border:1px solid #C2D1E4; border-radius:2px; 
+     -moz-border-radius:2px; -webkit-border-radius:2px;}
+.btnOk:hover{cursor:pointer;}    
+/*小屏幕*/
+@media only screen and (max-width:1024px){
+  .searchRulesBox{margin-left:50px;}
+}
+
+
+
+

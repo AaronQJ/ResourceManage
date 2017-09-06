@@ -1,0 +1,56 @@
+*{ margin:0; padding:0; font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;}
+
+.addBox{ width:1010px; min-height:200px; height:auto; border:3px solid #A5CFE7;
+ background-color:#fff; opacity:1; position:absolute; top:30px; left:35px; 
+ -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; padding-top:5px; 
+ font-size:16px; display:none; z-index:2; max-height: 530px; overflow:auto; }
+ @media only screen and (max-height: 534px)
+ {
+ 	.addBox{max-height:450px; overflow:auto;  }
+ 
+ }
+ 
+.addBox p{ font-size:16px;}
+.addBox p a { float:right; }
+.closeBox img{ width:25px; height:25px; }
+.closeBox img:hover{ opacity:0.8; }
+.massageBox{ width:1000px; min-height:200px;  height:auto; text-align:center; margin:10px auto;  overflow:hidden; position:relative; padding-bottom:40px; } 
+.notNull{ margin:0; }
+.null{ margin-left:8px; } 
+.massageBox span{ color:#FF0000; } 
+.longInput{ width:10px;}
+.massageBox input, .massageBox select{ height:22px; border:1px solid #C2D1E4; min-width:50px; width:182px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px;}
+.massageBox select{ width:200px; }
+.siveBoxAdd{ width:auto; height:auto; position:absolute;  bottom:0px; left:450px; }
+#sive{ height:30px; width:180px; font-size:15px; color:#444; background-color:#CFDDEE; }
+
+/*����ΪchangeOne�İ�ť*/
+.buttonCon{ height:52px; width:100%; text-align:center; margin:0 auto; margin-top:3px;} 
+.buttonCon span{width:400px; height:20px; line-height:20px; font-size:12px; display:block; text-align:left; }
+#changeOk{height:30px; width:180px; margin:auto auto; margin-top:0px; font-size:14px; color:#444; 
+     background-color:#CFDDEE;}
+     
+     
+ /*批量导出*/
+ #exportBox{ display:none; width:340px; height:140px !important; font-size:14px;}
+ #exportBox p{height:40px; line-height:40px;  font-weight:bold;}
+ #exportBox span1{ margin-top:40px; display:inline-block; font-size:14px; height:30px; line-height:30px;}
+ #okExport{ display:block; height:26px; line-height:26px; width:100px;  
+             margin:15px auto; -moz-border-radius:3px; 
+            -webkit-border-radius:3px; border-radius:3px;
+            font-size:12px; color:#444; background-color:#CFDDEE;}
+ /*屏幕宽度小于1024px*/
+@media only screen and (max-width:1024px){
+	.addBox{ width:800px; }
+	.massageBox{ width:780px;}
+	.notNull{ margin:0; }
+	.null{ margin-left:8px; } 
+	.massageBox span{ color:#FF0000; } 
+	.longInput{ width:10px;}
+	.massageBox input, .massageBox select{ height:22px; border:1px solid #C2D1E4; min-width:50px; width:152px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 20px 10px 5px;}
+	.massageBox select{ width:170px; }
+	.siveBoxAdd{ width:auto; height:auto; position:absolute;  bottom:0px; left:310px; }
+	#sive{ height:30px; width:150px; font-size:15px; color:#444; background-color:#CFDDEE; }
+}
+ 
+ 

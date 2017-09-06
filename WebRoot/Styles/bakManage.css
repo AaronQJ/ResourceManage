@@ -1,0 +1,106 @@
+/*#addBox{ width:900px; }
+#bakState{  height:22px; border:1px solid #C2D1E4; min-width:50px; width:140px;margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px; }
+#bakSeqNum, #bakVersion, #bakFactor, #bakUseDepart{ width:182px; }
+#bakDevRoom{ width:196px; }
+#bakState, #bakDevType, #bakForm{ width:80px;}
+#bakDevFrame, #bakArrAcceptTime, #bakMaintainDeadLine, #bakRecorder, #bakRemark{ width:152px; }
+#bakFactor, #bakManaDepart, #bakDevRoom, #bakRecorder, #bakMaintainFactor, #bakRemark{ margin-right:0px; }
+.siveBoxAdd{ left:330px; }*/
+
+#bakFactory, #bakState, #bakUser, #bakArrAcceptTime, #bakBuyCont, #bakRemark{ margin-right:0; }
+#bakDevType, #bakDevRoom{ width:166px; }
+#bakForm,  #bakUseDepart, #bakDevFrame{ width:150px; }
+.massageBox select{ width:216px; }
+#bakManaDepart{ width:134px; }
+#bakUser{ width:198px; }
+#bakArrAcceptTime{ width:150px; }
+#bakRecorder{ width:150px; }
+#bakMaintainCont{ width:168px; }
+#bakMaintainFactor{ width:152px; }
+#bakMaintainDeadLine{ width:118px; }
+#bakRemark{ width:208px; }
+@media only screen and (max-width:1024px){
+	#bakDevType, #bakDevRoom{ width:136px; }
+	#bakForm,  #bakUseDepart, #bakDevFrame{ width:120px; }
+	.massageBox select{ width:186px; }
+	#bakManaDepart{ width:104px; }
+	#bakUser{ width:168px; }
+	#bakArrAcceptTime{ width:120px; }
+	#bakRecorder{ width:120px; }
+	#bakMaintainCont{ width:138px; }
+	#bakMaintainFactor{ width:122px; }
+	#bakMaintainDeadLine{ width:88px; }
+	#bakRemark{ width:178px; }
+}
+/*��ҳ����ת��ť��ʽ�����ҵȣ�*/
+.leadPage a img{ width:10px; height:10px }
+.leadPage input{ width:30px; height:15px; border:1px solid #B1CEEC; text-align:center }
+
+/*changeOne*/
+#changeOne{ width:auto;}
+#changeOne p{ text-align:center; font-size:16px; font-weight:bold; height:40px; line-height:40px;}
+#bakFactory2, #bakState2, #bakUser2, #bakArrAcceptTime2, #bakBuyCont2, #bakRemark2{ margin-right:0; }
+#bakDevType2, #bakDevRoom2{ width:166px; }
+#bakForm2,  #bakUseDepart2, #bakDevFrame2{ width:150px; }
+#changeForm select{ width:216px; }
+#bakManaDepart2{ width:134px; }
+#bakUser2{ width:198px; }
+#bakArrAcceptTime2{ width:150px; }
+#bakRecorder2{ width:150px; }
+#bakMaintainCont2{ width:168px; }
+#bakMaintainFactor2{ width:152px; }
+#bakMaintainDeadLine2{ width:118px; }
+#bakRemark2{ width:208px; }
+.buttonCon span{margin-left:82px;}
+
+@media only screen and (max-width:1024px){
+	#changeOne{ width:800px;}
+	#bakDevType2, #bakDevRoom2{ width:136px; }
+	#bakForm2,  #bakUseDepart2, #bakDevFrame2{ width:120px; }
+	#changeForm select{ width:186px; }
+	#bakManaDepart2{ width:104px; }
+	#bakUser2{ width:168px; }
+	#bakArrAcceptTime2{ width:120px; }
+	#bakRecorder2{ width:120px; }
+	#bakMaintainCont2{ width:138px; }
+	#bakMaintainFactor2{ width:122px; }
+	#bakMaintainDeadLine2{ width:88px; }
+	#bakRemark2{ width:178px; }
+	.buttonCon span{margin-left:30px;}
+}
+
+/*detail*/
+
+#showDetail{ height:auto; width:auto !important; text-align:left;display:none;}
+#showDetail p{ text-align:center; font-size:16px !important; font-weight:bold; 
+         height:40px; line-height:40px; letter-spacing:2px; }
+.detailCon{ text-align:center; margin-left:10px; margin-right:10px; margin-top:10px; margin-bottom:40px;  line-height:35px;}
+.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:182px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px;}   
+#detailbakFactory, #detailbakState, #detailbakUser, #detailbakArrAcceptTime, #detailbakBuyCont, #detailbakRemark{ margin-right:0; }
+#detailbakDevType, #detailbakDevRoom{ width:166px; }
+#detailbakForm,  #detailbakUseDepart, #detailbakDevFrame{ width:150px; }
+.detailCon #detailbakState{ width:216px; }
+#detailbakManaDepart{ width:134px; }
+#detailbakUser{ width:198px; }
+#detailbakArrAcceptTime{ width:150px; }
+#detailbakRecorder{ width:150px; }
+#detailbakMaintainCont{ width:168px; }
+#detailbakMaintainFactor{ width:152px; }
+#detailbakMaintainDeadLine{ width:118px; }
+#detailbakRemark{ width:208px; }
+@media only screen and (max-width:1024px){
+	#showDetail{width:800px;}
+	.detailCon{width:760px;}
+	.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:152px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 30px 10px 5px;}   
+    #detailbakDevType, #detailbakDevRoom{ width:136px; }
+	#detailbakForm,  #detailbakUseDepart, #detailbakDevFrame{ width:120px; }
+	.detailCon #detailbakState{ width:186px; }
+	#detailbakManaDepart{ width:104px; }
+	#detailbakUser{ width:168px; }
+	#detailbakArrAcceptTime{ width:120px; }
+	#detailbakRecorder{ width:120px; }
+	#detailbakMaintainCont{ width:138px; }
+	#detailbakMaintainFactor{ width:122px; }
+	#detailbakMaintainDeadLine{ width:88px; }
+	#detailbakRemark{ width:178px; }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+ <class name="com.bussniess.domain.LinInf" table="lin_inf">
+  <id column="lineId" name="lineId">
+   <generator class="uuid"/>
+  </id>
+  <property column="lineNum" generated="never" lazy="false" name="lineNum"/>
+  <property column="lineOperator" generated="never" lazy="false" name="lineOperator"/>
+  <property column="lineSystem" generated="never" lazy="false" name="lineSystem"/>
+  <property column="lineState" generated="never" lazy="false" name="lineState"/>
+  <property column="lineLocalRemote" generated="never" lazy="false" name="lineLocalRemote"/>
+  <property column="lineBandWidth" generated="never" lazy="false" name="lineBandWidth"/>
+  <property column="lineLength" generated="never" lazy="false" name="lineLength"/>
+  <property column="lineType" generated="never" lazy="false" name="lineType"/>
+  <property column="lineARoom" generated="never" lazy="false" name="lineARoom"/>
+  <property column="lineARoomSite" generated="never" lazy="false" name="lineARoomSite"/>
+  <property column="lineZRoom" generated="never" lazy="false" name="lineZRoom"/>
+  <property column="lineZRoomSite" generated="never" lazy="false" name="lineZRoomSite"/>
+  <property column="lineContract" generated="never" lazy="false" name="lineContract"/>
+  <property column="lineContFirstParty" generated="never" lazy="false" name="lineContFirstParty"/>
+  <property column="lineContSecondParty" generated="never" lazy="false" name="lineContSecondParty"/>
+  <property column="lineContOperator" generated="never" lazy="false" name="lineContOperator"/>
+  <property column="lineSubUseDepart" generated="never" lazy="false" name="lineSubUseDepart"/>
+  <property column="lineSubUser" generated="never" lazy="false" name="lineSubUser"/>
+  <property column="lineUseTime" generated="never" lazy="false" name="lineUseTime"/>
+  <property column="lineDownTime" generated="never" lazy="false" name="lineDownTime"/>
+  <property column="lineSubManaDepart" generated="never" lazy="false" name="lineSubManaDepart"/>
+  <property column="lineCountryManaDepart" generated="never"
+   lazy="false" name="lineCountryManaDepart"/>
+  <property column="lineRecordor" generated="never" lazy="false" name="lineRecordor"/>
+  <property column="lineRemark" generated="never" lazy="false" name="lineRemark"/>
+  <property column="loginUserName" generated="never" lazy="false" name="loginUserName"/>
+  <property column="lineUpdTime" generated="never" lazy="false" name="lineUpdTime"/>
+  <property name="linePayer"  generated="never" lazy="false"   column="linePayer"></property>
+ </class>
+</hibernate-mapping>

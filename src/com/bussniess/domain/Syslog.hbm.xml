@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Syslog" table="SYSLOG">
+        <id name="syslogId" type="java.lang.Integer">
+            <column name="SYSLOGID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="device" class="com.bussniess.domain.Device" fetch="join">
+            <column name="DEVICE" />
+        </many-to-one>
+        <property name="syslogAlertNum" type="java.lang.String">
+            <column name="SYSLOGALERTNUM" />
+        </property>
+        <property name="syslogHighAlertNum" type="java.lang.String">
+            <column name="SYSLOGHIGHALERTNUM" />
+        </property>
+        <property name="syslogMediumAlertNum" type="java.lang.String">
+            <column name="SYSLOGMEDIUMALERTNUM" />
+        </property>
+        <property name="syslogLowAlertNum" type="java.lang.String">
+            <column name="SYSLOGLOWALERTNUM" />
+        </property>
+    </class>
+</hibernate-mapping>

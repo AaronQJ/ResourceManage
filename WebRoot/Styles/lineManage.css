@@ -1,0 +1,139 @@
+
+.massageBox input{ width:162px; }
+#lineZRoom, #lineBandWidth, #lineState, #lineContract, #lineContOperator, #lineCountryUseDepart, #lineCountryManaDepart, #linePayer{ margin-right:0; }
+#lineARoomSite{ width:86px; }
+#lineZRoomSite{ width:132px; }
+#lineBandWidth{ width:220px; }
+#lineLocalRemote{ width:140px; }
+#lineOperator{ width:206px; }
+#lineState{ width:190px; } 
+#lineSystem, #lineContFirstParty{ width:146px; }
+#lineType, #lineContract, #lineContSecondParty{ width:190px; }
+#lineContOperator{ width:174px; }
+#lineSubUseDepart, #lineCountryUser{ width:98px; }
+#lineSubUser{ width:158px; }
+#lineCountryUseDepart, #lineCountryManaDepart{ width:126px; }
+#lineSubManaDepart{ width:98px; }
+#lineRemark{ width:182px; }
+#lineRecordor{ width:176px; }
+#lineLength{ width:222px; margin-right:0; }
+#lineDownTime{ width:194px; margin-right:42px; }
+#lineUseTime{ width:150px; margin-right:42px; }
+#linePayer{ width:208px; }
+@media only screen and (max-width:1024px){
+	.massageBox input{ width:132px; margin:10px 20px 10px 5px;}
+	#lineZRoom, #lineBandWidth, #lineState, #lineContract, #lineContOperator, #lineCountryUseDepart, #lineCountryManaDepart, #linePayer{ margin-right:0; }
+	#lineARoomSite{ width:56px; }
+	#lineZRoomSite{ width:102px; }
+	#lineBandWidth{ width:190px; }
+	#lineLocalRemote{ width:110px; }
+	#lineOperator{ width:176px; }
+	#lineState{ width:160px; } 
+	#lineSystem, #lineContFirstParty{ width:116px; }
+	#lineType, #lineContract, #lineContSecondParty{ width:160px; }
+	#lineContOperator{ width:144px; }
+	#lineSubUseDepart, #lineCountryUser{ width:68px; }
+	#lineSubUser{ width:128px; }
+	#lineCountryUseDepart, #lineCountryManaDepart{ width:96px; }
+	#lineSubManaDepart{ width:68px; }
+	#lineRemark{ width:152px; }
+	#lineRecordor{ width:146px; }
+	#lineLength{ width:192px; margin-right:0; }
+	#lineDownTime{ width:164px; margin-right:26px; }
+	#lineUseTime{ width:120px; margin-right:26px; }
+	#linePayer{ width:178px; }
+	#canNullP{ margin-left:20px !important; text-align:left; }
+}
+
+/*��ҳ����ת��ť��ʽ�����ҵȣ�*/
+.leadPage a img{ width:10px; height:10px }
+.leadPage input{ width:30px; height:15px; border:1px solid #B1CEEC; text-align:center }
+
+/*changeOne*/
+#lineZRoom2, #lineBandWidth2, #lineState2, #lineContract2, #lineContOperator2, #lineCountryUseDepart2, #lineCountryManaDepart2, #linePayer2{ margin-right:0; }
+#lineARoomSite2{ width:86px; }
+#lineZRoomSite2{ width:132px; }
+#lineBandWidth2{ width:220px; }
+#lineLocalRemote2{ width:140px; }
+#lineOperator2{ width:206px; }
+#lineState2{ width:190px; } 
+#lineSystem2, #lineContFirstParty2{ width:146px; }
+#lineType2, #lineContract2, #lineContSecondParty2{ width:190px; }
+#lineContOperator2{ width:174px; }
+#lineSubUseDepart2, #lineCountryUser2{ width:98px; }
+#lineSubUser2{ width:158px; }
+#lineCountryUseDepart2, #lineCountryManaDepart2{ width:126px; }
+#lineSubManaDepart2{ width:98px; }
+#lineRemark2{ width:182px; }
+#lineRecordor2{ width:176px; }
+#lineLength2{ width:222px; margin-right:0; }
+#lineDownTime2{ width:194px; margin-right:42px; }
+#lineUseTime2{ width:150px; margin-right:42px; }
+#linePayer2{ width:208px; }
+.buttonCon span{margin-left:20px;}
+@media only screen and (max-width:1024px){
+	#lineARoomSite2{ width:56px; }
+	#lineZRoomSite2{ width:102px; }
+	#lineBandWidth2{ width:190px; }
+	#lineLocalRemote2{ width:110px; }
+	#lineOperator2{ width:176px; }
+	#lineState2{ width:160px; } 
+	#lineSystem2, #lineContFirstParty2{ width:116px; }
+	#lineType2, #lineContract2, #lineContSecondParty2{ width:160px; }
+	#lineContOperator2{ width:144px; }
+	#lineSubUseDepart2, #lineCountryUser2{ width:68px; }
+	#lineSubUser2{ width:128px; }
+	#lineCountryUseDepart2, #lineCountryManaDepart2{ width:96px; }
+	#lineSubManaDepart2{ width:68px; }
+	#lineRemark2{ width:152px; }
+	#lineRecordor2{ width:146px; }
+	#lineLength2{ width:192px; margin-right:0; }
+	#lineDownTime2{ width:164px; margin-right:26px; }
+	#lineUseTime2{ width:120px; margin-right:26px; }
+	#linePayer2{ width:178px; }
+	#canNullP2{ margin-left:20px !important; text-align:left; }
+}
+/*detail*/
+
+#showDetail{ height:auto !important; width:1000px; text-align:center;display:none; overflow:auto;}
+#showDetail p{ text-align:center; font-size:16px !important; font-weight:bold; 
+height:40px; line-height:40px; letter-spacing:2px; }
+.detailCon{ margin-left:20px; margin-right:20px; margin-top:10px; margin-bottom:40px; line-height:35px; width:auto;}
+.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:182px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px;}   
+#detaillineZRoom, #detaillineBandWidth, #detaillineState, #detaillineContract, #detaillineContOperator, #detaillineCountryUseDepart, #detaillineCountryManaDepart, #detaillineRemark,#detaillineLength { margin-right:0; }
+#detaillineARoomSite{ width:108px; }
+#detaillineZRoomSite{ width:150px; }
+#detaillineBandWidth, #detaillineLength{ width:240px; }
+#detaillineLocalRemote{ width:164px; }
+#detaillineOperator{ width:222px; }
+#detaillineState{ width:210px; } 
+#detaillineSystem, #detaillineContFirstParty, #detaillineUseTime{ width:166px; }
+#detaillineType, #detaillineContract, #detaillineContSecondParty, #detaillineDownTime{ width:206px; }
+#detaillineContOperator{ width:190px; }
+#detaillineSubUseDepart, #detaillineCountryUser,#detaillineSubManaDepart{ width:118px; }
+#detaillineSubUser{ width:174px; }
+#detaillineCountryUseDepart, #detaillineCountryManaDepart{ width:142px; }
+#detaillineRecordor{ width:190px; }
+#detaillineRemark{ width:194px; margin-right:660px; }
+#detaillinePayer{ width:226px; margin-right:0;}
+@media only screen and (max-width:1024px){
+	#showDetail{width:800px;}
+	.detailCon{width:760px; }
+	.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:152px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 20px 10px 5px;}   
+    #detaillineZRoom{width:130px;}
+    #detaillineARoomSite{ width:78px; }
+	#detaillineZRoomSite{ width:120px; }
+	#detaillineBandWidth, #detaillineLength{ width:186px; }
+	#detaillineLocalRemote{ width:134px; }
+	#detaillineOperator{ width:192px; }
+	#detaillineState, #detaillineContract{ width:150px; } 
+	#detaillineSystem, #detaillineContFirstParty, #detaillineUseTime{ width:136px; }
+	#detaillineType, #detaillineContSecondParty, #detaillineDownTime{ width:180px; }
+	#detaillineContOperator{ width:133px; }
+	#detaillineSubUseDepart, #detaillineCountryUser,#detaillineSubManaDepart{ width:88px; }
+	#detaillineSubUser{ width:148px; }
+	#detaillineCountryUseDepart, #detaillineCountryManaDepart{ width:86px; }
+	#detaillineRecordor{ width:160px; }
+	#detaillineRemark{ width:164px; margin-right:540px;}
+	#detaillinePayer{ width:166px; margin-right:0;}
+	}

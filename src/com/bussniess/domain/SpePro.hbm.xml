@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    	<class name="com.bussniess.domain.SpePro" table="spe_pro">
+    		<id name="speId" column="speId">
+    			<generator class="uuid"></generator>
+    		</id>
+	    	
+	    	<property name="speDevName" column="speDevName"></property>
+	   	    <property name="speOwnSystem" column="speOwnSystem"></property>
+	    	<property name="speState" column="speState"></property>
+	    	<property name="speProOwn" column="speProOwn"></property>
+	    	<property name="speAssetsManaDepart" column="speAssetsManaDepart"></property>
+	    	<property name="speVersion" column="speVersion"></property>
+	    	<property name="speDevFactor" column="speDevFactor"></property>
+	    	<property name="speDevType" column="speDevType"></property>
+	    	<property name="speDevRoom" column="speDevRoom"></property>
+	    	<property name="speDevRoomFrame" column="speDevRoomFrame"></property>
+	    	<property name="speUseDepart" column="speUseDepart"></property>
+	    	<property name="speUser" column="speUser"></property>
+	    	<property name="speManaDepart" column="speManaDepart"></property>
+	    	<property name="speSeqNum" column="speSeqNum"></property>
+	    	<property name="speOwnNet" column="speOwnNet"></property>
+	    	<property name="speMasterIP" column="speMasterIP"></property>
+	    	<property name="speSlaveIP" column="speSlaveIP"></property>
+	    	<property name="speProject" column="speProject"></property>
+	    	<property name="speBuyCont" column="speBuyCont"></property>
+	    	<property name="speArrAcceptTime" column="speArrAcceptTime"></property>
+	    	<property name="speAssertsNum" column="speAssertsNum"></property>
+	    	<property name="speMaintainCont" column="speMaintainCont"></property>
+	    	<property name="speMaintainFactor" column="speMaintainFactor"></property>
+	    	<property name="speMaintainDeadLine" column="speMaintainDeadLine"></property>
+	    	<property name="speBarCode" column="speBarCode"></property>
+	    	<property name="speRemark" column="speRemark"></property>
+	    	<property name="loginUserName" column="loginUserName"></property>
+	    	<property name="speUpdTime" column="speUpdTime"></property>
+	    	<property name="speAssState" column="speAssState"></property>
+	    	<property name="speFixedTime" column="speFixedTime"></property>
+	    	<property name="speScrapTime" column="speScrapTime"></property>
+    	</class>
+    </hibernate-mapping>

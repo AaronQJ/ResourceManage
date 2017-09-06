@@ -1,0 +1,101 @@
+/*閿熸枻鎷烽敓锟�*/
+#addForm p{ text-align:left; margin-left:66px; }
+#speSeqNum, #speState, #speAssetsManaDepart, #speManaDepart, #speOwnNet, #speProject, #speMaintainCont, #speSlaveIP, #speScrapTime{ margin-right:0; }
+#speUser{ width:198px; }
+#speAssetsManaDepart{ width:98px; }
+#speVersion{ width:214px; }
+#speManaDepart{ width:130px; }
+#speOwnNet, #speProject, #speMaintainCont, #speScrapTime{ width:162px; }
+#speArrAcceptTime, #speMaintainDeadLine, #speAssertsNum{ width:148px; }
+#speSlaveIP{ width:146px; }
+#speRemark{ width:214px; }
+#speAssState{ width: 184px }
+
+@media only screen and (max-width:1024px){
+	#addForm p{ text-align:left; margin-left:16px; }
+    #speSeqNum, #speState, #speAssetsManaDepart, #speManaDepart, #speOwnNet, #speProject, #speMaintainCont, #speSlaveIP{ margin-right:0; }
+	#speUser{ width:168px; }
+	#speAssetsManaDepart{ width:68px; }
+	#speVersion{ width:184px; }
+	#speManaDepart{ width:100px; }
+	#speOwnNet, #speProject, #speMaintainCont{ width:132px; }
+	#speArrAcceptTime, #speMaintainDeadLine, #speAssertsNum{ width:118px; }
+	#speSlaveIP{ width:116px; }
+	#speRemark{ width:184px; }
+	#speAssState{ width: 154px }
+	#speScrapTime{ width:130px; }
+}
+
+/*閿熺潾鏀圭鎷烽敓鏂ゆ嫹*/
+#changeOne{ width:1010px;}
+#changeOne p{ text-align:center; font-size:16px; font-weight:bold; height:40px; line-height:40px; margin-top:0px;}
+#changeForm p{ text-align:left; margin-left:16px; font-weight:normal; }
+#speSeqNum2, #speState2, #speAssetsManaDepart2, #speManaDepart2, #speOwnNet2, #speProject2, #speMaintainCont2, #speSlaveIP2,#speScrapTime2{ margin-right:0; }
+#speUser2{ width:198px; }
+#speAssetsManaDepart2{ width:98px; }
+#speVersion2{ width:214px; }
+#speManaDepart2{ width:130px; }
+#speOwnNet2, #speProject2, #speMaintainCont2, #speScrapTime2{ width:162px; }
+#speArrAcceptTime2, #speMaintainDeadLine2, #speAssertsNum2{ width:148px; }
+#speSlaveIP2{ width:146px; }
+#speRemark2{ width:214px; }
+#speAssState2{ width: 184px }
+.buttonCon span{margin-left:16px;}
+@media only screen and (max-width:1024px){
+	#changeOne{ width:800px;}
+	#speUser2{ width:168px; }
+	#speAssetsManaDepart2{ width:68px; }
+	#speVersion2{ width:184px; }
+	#speManaDepart2{ width:100px; }
+	#speOwnNet2, #speProject2, #speMaintainCont2{ width:132px; }
+	#speArrAcceptTime2, #speMaintainDeadLine2, #speAssertsNum2{ width:118px; }
+	#speSlaveIP2{ width:116px; }
+	#speRemark2{ width:184px; }
+	#speAssState2{ width: 154px }
+	#speScrapTime2{ width:130px; }
+	#withXinghao{margin-left:0px !important;}
+	#withBeizhu{ margin-left:17px !important; }
+}
+
+/*detail*/
+#showDetail{ height:auto; width:auto !important; text-align:left;display:none;}
+#showDetail p{ text-align:center; font-size:16px !important; font-weight:bold; 
+             height:40px; line-height:40px; letter-spacing:2px; }
+.detailCon{ margin-left:20px; margin-right:20px; margin-top:10px; margin-bottom:40px; width: 100%;}
+.detailCon label{margin-left:0px;}
+.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:182px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 36px 10px 5px;}   
+#detailspeSeqNum, #detailspeAssetsManaDepart, #detailspeManaDepart, #detailspeOwnNet,#detailspeProject,#detailspeMaintainCont, #detailspeSlaveIP,#detailspeState, #detailspeScrapTime{ margin-right:0; }
+ #detailspeState{width:198px;}
+#detailspeUser{ width:198px; }
+#detailspeAssetsManaDepart{ width:98px; }
+#detailspeVersion{ width:214px; }
+#detailspeManaDepart{ width:130px; }
+#detailspeOwnNet, #detailspeProject, #detailspeMaintainCont,#detailspeScrapTime{ width:162px; }
+#detailspeArrAcceptTime, #detailspeMaintainDeadLine, #detailspeAssertsNum{ width:148px; }
+#detailspeSlaveIP{ width:146px; }
+#detailspeRemark{ width:214px; }
+#detailspeProject, #detailspeMaintainCont{width:160px;}
+
+@media only screen and (max-width:1024px){
+	#showDetail{width:800px;}
+	.detailCon{width: 100%;}
+	.detailCon input{height:22px; border:1px solid #C2D1E4; min-width:50px; width:152px; margin-right:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:10px 20px 10px 5px;}   
+	#detailspeSeqNum, #detailspeAssetsManaDepart, #detailspeManaDepart, #detailspeOwnNet,#detailspeProject,#detailspeMaintainCont, #detailspeSlaveIP,#detailspeState{ margin-right:0; }
+	 #detailspeState{width:168px;}
+	#detailspeUser{ width:168px; }
+	#detailspeAssetsManaDepart{ width:68px; }
+	#detailspeVersion{ width:184px; }
+	#detailspeManaDepart{ width:100px; }
+	#detailspeOwnNet, #detailspeProject, #detailspeMaintainCont,#detailspeScrapTime{ width:132px; }
+	#detailspeArrAcceptTime, #detailspeMaintainDeadLine, #detailspeAssertsNum{ width:118px; }
+	#detailspeSlaveIP{ width:116px; }
+	#detailspeRemark{ width:184px; }
+	#detailspeProject, #detailspeMaintainCont{width:130px;}
+}
+/*翻页按钮样式*/
+.leadPage a img{ width:10px; height:10px }
+.leadPage input{ width:30px; height:15px; border:1px solid #B1CEEC; text-align:center }
+
+
+
+

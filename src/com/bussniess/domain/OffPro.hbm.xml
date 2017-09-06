@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    	<class name="com.bussniess.domain.OffPro" table="off_pro">
+    		<id name="offId" column="offId">
+    			<generator class="uuid"></generator>
+    		
+    		</id>
+    	
+    	<property name="offBarCode" column="offBarCode"></property>
+    	<property name="offNum" column="offNum"></property>
+    	<property name="offName" column="offName"></property>
+    	<property name="offDevVersion" column="offDevVersion"></property>
+    	<property name="offPrice" column="offPrice"></property>
+    	<property name="offObtDate" column="offObtDate"></property>
+    	<property name="offUseDepart" column="offUseDepart"></property>
+    	<property name="offUser" column="offUser"></property>
+    	<property name="offManager" column="offManager"></property>
+    	<property name="offRemark" column="offRemark"></property>
+    	<property name="offUseState" column="offUseState"></property>
+    	<property name="offState" column="offState"></property>
+    	<property name="offSeqNum" column="offSeqNum"></property>
+    	<property name="loginUserName" column="loginUserName"></property>
+    	<property name="offUpdTime" column="offUpdTime"></property>
+    	<property name="offLifeTime" column="offLifeTime"></property>
+    	<property name="offFlag" column="offFlag"></property>
+    	</class>
+    
+    
+    </hibernate-mapping>

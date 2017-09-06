@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Availability" table="AVAILABILITY">
+        <id name="avaId" type="java.lang.Integer">
+            <column name="AVAID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="device" class="com.bussniess.domain.Device" fetch="join">
+            <column name="DEVICE" />
+        </many-to-one>
+        <property name="bandwithUsage" type="java.lang.String">
+            <column name="BANDWITHUSAGE" />
+        </property>
+        <property name="ifThroughPutRate" type="java.lang.String">
+            <column name="IFTHROUGHPUTRATE" />
+        </property>
+        <property name="CPUUsage" type="java.lang.String">
+            <column name="CPUUSAGE" />
+        </property>
+        <property name="memoryUsage" type="java.lang.String">
+            <column name="MEMORYUSAGE" />
+        </property>
+        <property name="concentration" type="float">
+            <column name="CONCENTRATION" />
+        </property>
+    </class>
+</hibernate-mapping>

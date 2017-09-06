@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+		
+		<package name="log"  namespace="/" extends="struts-default">
+			<action name="logdelete" class="com.bussniess.web.action.logTextAction" method="logDelete">
+			</action>	
+             <action name="logselect"  
+            		class="com.bussniess.web.action.logTextAction" method="logSelect">  	
+       		 </action>  
+       		  <action name="logselectall"  
+            		class="com.bussniess.web.action.logTextAction" method="logSelectAll">  
+       		 </action>   		  
+  		     <action name="exportExcelByConditions" class="com.bussniess.web.action.LogExportAction" method="exportExcelByConditions">
+			</action>
+			<action name="exportalllogexcelbyconditions" class="com.bussniess.web.action.LogExportAction" method="exportAllExcelByConditions">
+			</action>
+		</package>	
+</struts>	

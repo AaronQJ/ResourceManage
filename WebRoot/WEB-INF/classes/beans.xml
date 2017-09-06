@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		                    http://www.springframework.org/schema/context 
+		                    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		                    http://www.springframework.org/schema/tx 
+		                    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		                    http://www.springframework.org/schema/aop 
+		                    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+		                    
+	<!-- 测试使用 -->
+	<bean name="elecText" class="com.bussniess.domain.ElecText" >
+		<property name="textName" value="testspring"></property>
+	</bean>
+	 
+	<!-- c3p0数据库连接池配置 -->
+	<bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl"  value="jdbc:mysql://127.0.0.1:3306/resource?useUnicode=true&amp;characterEncoding=utf8" ></property>
+		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+		<property name="user" value="root"></property>
+		<property name="password" value="qj1992"></property>
+		
+		<property name="initialPoolSize" value="5"></property>
+		<property name="maxPoolSize" value="5"></property>
+		<property name="minPoolSize" value="0"></property>
+		
+     		<property name="testConnectionOnCheckout" value="true"/>    
+		<property name="idleConnectionTestPeriod" value="5"></property>
+		<property name="maxIdleTime" value="3"></property>
+		
+	</bean>	         
+	 
+	<!-- SessionFactory -->
+	<bean name="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation" value="classpath:/hibernate.cfg.xml"></property>
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>           
+		                    
+	<!-- 配置事务管理器 -->
+	<bean name="hibernateTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"  ref="sessionFactory"></property>
+	</bean>	     
+	
+	
+	<!-- 配置aop事务管理 -->
+	 <tx:advice id="transactionAdvice"  transaction-manager="hibernateTransactionManager">
+	 	<tx:attributes>
+	 		<tx:method name="add*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="delete*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="remove*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="find*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="get*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="query*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="list*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="update*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 		<tx:method name="alter*" isolation="DEFAULT" propagation="REQUIRED"/>
+	 	</tx:attributes>
+	 </tx:advice>              
+	 
+	 <!-- 配置切入点,织入增强功能 -->
+	 <aop:config>
+	 	<aop:pointcut  id="transactionPointcut" expression="execution( *  com.bussniess.service.*.*(..))" />
+	 	<aop:advisor advice-ref="transactionAdvice"  pointcut-ref="transactionPointcut" />
+	 </aop:config>
+	 
+	 <!-- 配置Hibernate模板 bean -->
+	 <bean name="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	 	<property name="sessionFactory" ref="sessionFactory"></property>
+	 </bean>
+	 
+	 
+	 
+  	 <import resource="config/beans-dao.xml"/>
+	  <import resource="config/beans-service.xml"/>
+	 <import resource="config/beans-action.xml"/>
+		                    
+</beans>		                    

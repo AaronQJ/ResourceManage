@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.StateWeight" table="STATEWEIGHT">
+        <id name="weightId" type="java.lang.Integer">
+            <column name="WEIGHTID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="device" class="com.bussniess.domain.Device" fetch="join">
+            <column name="DEVICE" />
+        </many-to-one>
+        <property name="vulWeight" type="float">
+            <column name="VULWEIGHT" />
+        </property>
+        <property name="danWeight" type="float">
+            <column name="DANWEIGHT" />
+        </property>
+        <property name="avaWeight" type="float">
+            <column name="AVAWEIGHT" />
+        </property>
+        <property name="relWeight" type="float">
+            <column name="RELWEIGHT" />
+        </property>
+    </class>
+</hibernate-mapping>

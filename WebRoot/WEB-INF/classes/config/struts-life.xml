@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+		
+		<package name="life"  namespace="/" extends="struts-default">
+			<action name="LinInfLifeTime" class="com.bussniess.web.action.DevLifeTime" method="LinInfLifeTime">
+			</action>	
+            <action name="OffProLifeTime" class="com.bussniess.web.action.DevLifeTime" method="OffProLifeTime">
+			</action>	
+       		 <action name="ProBakLifeTime" class="com.bussniess.web.action.DevLifeTime" method="ProBakLifeTime">
+			</action>		  
+  		    <action name="SpeProLifeTime" class="com.bussniess.web.action.DevLifeTime" method="SpeProLifeTime">
+			</action>	
+			
+		</package>	
+</struts>	

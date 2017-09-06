@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bussniess.domain.logText" table="log">
+		<id name="logId" column="logId">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="userName" column="userName"></property>
+		<property name="operTime" column="operTime"></property>
+		<property name="objName" column="objName"></property>
+		<property name="fieldName" column="fieldName"></property>
+		<property name="fieldOriValue" column="fieldOriValue"></property>
+		<property name="fieldUpdValue" column="fieldUpdValue"></property>
+		<property name="operType" column="operType"></property>
+		<property name="objType" column="objType"></property>
+		<property name="logType" column="logType"></property>
+		<property name="objId" column="objId"></property>
+		
+	</class>
+</hibernate-mapping>    

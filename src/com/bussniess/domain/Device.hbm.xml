@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Device" table="DEVICE">
+        <id name="deviceId" type="java.lang.Integer">
+            <column name="DEVICEID" />
+            <generator class="native" />
+        </id>
+        <property name="sysDescr" type="java.lang.String">
+            <column name="SYSDESCR" />
+        </property>
+        <property name="version" type="java.lang.String">
+            <column name="VERSION" />
+        </property>
+        <property name="ifNumber" type="java.lang.Integer">
+            <column name="IFNUMBER" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="STATUS" />
+        </property>
+        <property name="sysObjectId" type="java.lang.String">
+            <column name="SYSOBJECTID" />
+        </property>
+        <property name="sysName" type="java.lang.String">
+            <column name="SYSNAME" />
+        </property>
+        <property name="sysOrLastChange" type="java.util.Date">
+            <column name="SYSORLASTCHANGE" />
+        </property>
+        <property name="deviceWeight" type="float">
+            <column name="DEVICEWEIGHT" />
+        </property>
+    </class>
+</hibernate-mapping>

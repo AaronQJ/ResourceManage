@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.PortState" table="PORTSTATE">
+        <id name="portStateId" type="java.lang.Integer">
+            <column name="PORTSTATEID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="port" class="com.bussniess.domain.Port" fetch="join">
+            <column name="PORT" />
+        </many-to-one>
+        <property name="ifInUcastPkts" type="java.lang.String">
+            <column name="IFINUCASTPKTS" />
+        </property>
+        <property name="ifOutUcastPkts" type="java.lang.String">
+            <column name="IFOUTUCASTPKTS" />
+        </property>
+        <property name="ifOperStatus" type="java.lang.String">
+            <column name="IFOPERSTATUS" />
+        </property>
+        <property name="ifAdminStatus" type="java.lang.String">
+            <column name="IFADMINSTATUS" />
+        </property>
+        <property name="ifInOctets" type="java.lang.String">
+            <column name="IFINOCTETS" />
+        </property>
+        <property name="ifInNUcastPkts" type="java.lang.String">
+            <column name="IFINNUCASTPKTS" />
+        </property>
+        <property name="ifInDiscards" type="java.lang.String">
+            <column name="IFINDISCARDS" />
+        </property>
+        <property name="ifInErrors" type="java.lang.String">
+            <column name="IFINERRORS" />
+        </property>
+        <property name="ifInUnknownProtos" type="java.lang.String">
+            <column name="IFINUNKNOWNPROTOS" />
+        </property>
+        <property name="ifOutOctets" type="java.lang.String">
+            <column name="IFOUTOCTETS" />
+        </property>
+        <property name="ifOutNUcastPkts" type="java.lang.String">
+            <column name="IFOUTNUCASTPKTS" />
+        </property>
+        <property name="ifOutDiscards" type="java.lang.String">
+            <column name="IFOUTDISCARDS" />
+        </property>
+        <property name="ifOutErrors" type="java.lang.String">
+            <column name="IFOUTERRORS" />
+        </property>
+        <property name="ifLastChange" type="java.util.Date">
+            <column name="IFLASTCHANGE" />
+        </property>
+    </class>
+</hibernate-mapping>

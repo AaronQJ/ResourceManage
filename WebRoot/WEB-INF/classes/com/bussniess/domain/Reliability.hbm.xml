@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 15:52:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bussniess.domain.Reliability" table="RELIABILITY">
+        <id name="relId" type="java.lang.Integer">
+            <column name="RELID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="device" class="com.bussniess.domain.Device" fetch="join">
+            <column name="DEVICE" />
+        </many-to-one>
+        <property name="ifInBytesNum" type="java.lang.String">
+            <column name="IFINBYTESNUM" />
+        </property>
+        <property name="ifInAverageRate" type="java.lang.String">
+            <column name="IFINAVERAGERATE" />
+        </property>
+        <property name="ifOutAverageRate" type="java.lang.String">
+            <column name="IFOUTAVERAGERATE" />
+        </property>
+        <property name="concentration" type="float">
+            <column name="CONCENTRATION" />
+        </property>
+    </class>
+</hibernate-mapping>

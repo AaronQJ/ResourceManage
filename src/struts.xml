@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 常量配置 -->
+	<constant name="struts.devModel" value="true"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	
+	<package name="new-structs-default"  namespace="/" abstract="true" extends="struts-default">
+	
+	    <interceptors>
+			<interceptor name="authInterceptor" class="com.bussniess.web.interceptor.AuthenticationInterceptor"></interceptor>
+				<!-- 新的默认拦截器栈 -->
+				<interceptor-stack name="newDefaultStack">
+					<interceptor-ref name="authInterceptor"></interceptor-ref>
+					<interceptor-ref name="defaultStack"></interceptor-ref>
+				</interceptor-stack>
+			</interceptors>
+			
+		<!-- 指定默认的拦截器栈 -->
+		<default-interceptor-ref name="newDefaultStack"></default-interceptor-ref>
+			
+		<!-- 配置全局result -->
+		<global-results>
+			<result name="nopower">/noPower.jsp</result>
+		</global-results>
+	
+	</package> 
+	
+	<include file="config/struts-lininf.xml"></include>
+	<include file="config/struts-spepro.xml"></include>
+	<include file="config/struts-offpro.xml"></include>
+	<include file="config/struts-probak.xml"></include>
+	<include file="config/struts-text.xml"></include>
+	<include file="config/struts-userAction.xml"></include>
+	<include file="config/struts-log.xml"></include>
+	<include file="config/struts-mysql.xml"></include>
+	<include file="config/struts-life.xml"></include>
+	
+</struts>	

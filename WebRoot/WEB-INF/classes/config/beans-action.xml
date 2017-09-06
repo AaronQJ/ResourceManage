@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		                    http://www.springframework.org/schema/context 
+		                    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		                    http://www.springframework.org/schema/tx 
+		                    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		                    http://www.springframework.org/schema/aop 
+		                    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	<!-- 配置action  bean -->	       
+	
+	             
+	 <!-- 配置ElecTextAction -->
+	 <bean name="textAction" class="com.bussniess.web.action.ElecTextAction" scope="prototype">
+	 	<property name="textService" ref="textService"></property>
+	 </bean>	
+	 
+	 <bean name="infoAction" class="com.bussniess.web.action.ManagerLinInfAction" scope="prototype">
+	 	<property name="infoService" ref="infoService"></property>
+	 </bean>	  
+	 
+	 <bean name="offAction" class="com.bussniess.web.action.ManagerOffProAction" scope="prototype">
+	 	<property name="offService" ref="offService"></property>
+	 </bean>	  
+	 
+	 <bean name="bakAction" class="com.bussniess.web.action.ManagerProBakAction" scope="prototype">
+	 	<property name="bakService" ref="bakService"></property>
+	 </bean>	  
+	 
+	 <bean name="speAction" class="com.bussniess.web.action.ManagerSpeProAction" scope="prototype">
+	 	<property name="speService" ref="speService"></property>
+	 </bean>	
+	 
+	 <bean name="mysqlAction" class="com.bussniess.web.action.MySqlImportAndExportAction" scope="prototype">
+	 	
+	 </bean>
+	 
+	 <!-- 配置userAciton -->
+	 <bean name="userAction" class="com.bussniess.web.action.UsersAction" scope="prototype">
+	 	<property name="userService" ref="userService"></property>
+	 </bean>
+	 <bean name="authAction" class="com.bussniess.web.action.UsersAuthAction">
+	 	<property name="userService" ref="userService"></property>
+	 	<property name="roleService" ref="roleService"></property>
+	 	<property name="privilegeService" ref="privilegeService"></property>
+	 </bean>	                                            
+		<bean name="logTextAction" class="com.bussniess.web.action.logTextAction" scope="prototype">
+	 	<property name="logTextService" ref="logTextService"></property>
+	 </bean>	         
+		                    
+</beans>		                    
